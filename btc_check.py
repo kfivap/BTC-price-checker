@@ -1,5 +1,7 @@
 import requests, time
 
+delay=10 #cooldown in seconds
+
 def toFixed(numObj, digits=0):
     return f"{numObj:.{digits}f}"
 
@@ -16,5 +18,5 @@ while True:
 	
 	print(f'{tm}          1BTC = {usd} $      1BTC = {eur} €')
 
-	time.sleep(10) #10 second cooldown
+	time.sleep(delay)
 
